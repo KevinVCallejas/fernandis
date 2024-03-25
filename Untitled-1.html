@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Postres</title>
+    <style>
+        /* Estilos CSS para mejorar la apariencia */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ee78a9; /* Fondo rosa pastel */
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        #comentarios {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #501d36;
+        }
+
+        #comentarios textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            resize: vertical;
+        }
+
+        #comentarios input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #comentarios input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .banner {
+            background-color: #add8e6; /* Fondo azul pastel */
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: nowrap; /* Evita que las imágenes se envuelvan */
+            overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+            gap: 10px;
+            animation: rotarGaleria 10s linear infinite; /* Animación de rotación */
+            cursor: pointer;
+        }
+
+        .imagen {
+            width: 200px;
+            height: 150px;
+            overflow: hidden;
+            border: 2px solid #333;
+            transition: transform 0.3s ease; /* Transición al hacer hover */
+        }
+
+        .imagen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .imagen:hover {
+            transform: scale(1.1); /* Aumento al hacer hover */
+        }
+
+        /* Animación de rotación */
+        @keyframes rotarGaleria {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Activa la animación al pasar el cursor sobre la galería */
+        .galeria:hover {
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1>POSTRES DOÑA MARISOL</h1>
+        <p class="trebuchet-ms">Descubre deliciosos Postres para satisfacer tu paladar dulce</p>
+    </div>
+    <table>
+        <tr>
+            <th><h1>Fernanda</h1></th>
+        </tr>
+        <tr>
+            <td><img src="Fer.jpg" 
+                alt="Imagen 1" width="300" height="400"></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th><h1>Presentacion</h1></th>
+        </tr>
+        <tr>
+            <td><audio controls><source src="audio fer.ogg" type="audio/mpeg">Tu navegador no soporta</audio></td>
+        </tr>
+    </table>
+    <nav>
+        <ul>
+          
+            <li><a href="#pasteles">Pasteles</a></li>
+            <li><a href="#gelatinas">Gelatinas</a></li>
+            <li><a href="#tartas">Tartas</a></li>
+            <li><a href="#Paletas de hielo">Paletas de hielo</a></li>
+            <li><a href="#contactanos">contactanos</a></li>
+            <li><a href="#comentarios">comentarios</a></li>
+            
+        </ul>
+    </nav>
+    <section id="pasteles">
+       <table>
+         <h1>Pasteles</h1>
+        <p class="trebuchet-ms">Pregunta por nuestra seleccion de pasteles.</p>
+        <!-- Aquí irían las recetas de pasteles -->
+        <section class="gallery">
+            <marquee behavior="scroll" direction="left">
+                <div class="galeria">
+                    <div class="imagen" onclick="abrirImagen('fetiches.avif')">
+                        <img src="pastel 1.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('es-sexo-fetichismo_1.jpg')">
+                        <img src="pastel 2.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('juguetes.jpg')">
+                        <img src="pastel 3.jpg" alt="Imagen 3">
+                    </div>
+                   
+              </marquee>
+            
+            <!-- Script para abrir imágenes en tamaño completo -->
+            <script>
+                function abrirImagen(rutaImagen) {
+                    window.open(rutaImagen, '_blank');
+                }
+            </script>
+        </section>
+    </table>
+    </section>
+    <section id="gelatinas">
+    <table>
+        <h1>Gelatinas</h1>
+        <p class="trebuchet-ms">Estas son algunas de las gelatinas que nosotros realizamos 
+            Hay de diferentes sabores y colores</p>
+        <!-- Aquí irían las recetas de gelatinas -->
+        <section class="gallery">
+            <marquee behavior="scroll" direction="left">
+                <div class="galeria">
+                    <div class="imagen" onclick="abrirImagen('gelatina 4.jpg')">
+                        <img src="gelatina 4.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('gelatina 1.jpg')">
+                        <img src="gelatina 1.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('gelatina 2.jpg')">
+                        <img src="gelatina 2.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('gelatina 3.jpg')">
+                        <img src="gelatina 3.jpg" alt="Imagen 4">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('gelatina 5.jpg')">
+                        <img src="gelatina 5.jpg" alt="Imagen 5">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('gelatina 6.jpg')">
+                        <img src="gelatina 6.jpg" alt="Imagen 5">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('gelatina 7.jpg')">
+                        <img src="gelatina 7.jpg" alt="Imagen 5">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('gelatina 8.jpg')">
+                        <img src="gelatina 8.jpg" alt="Imagen 5">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('gelatina 9.jpg')">
+                        <img src="gelatina 9.jpg" alt="Imagen 5">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('gelatina 10.jpg')">
+                        <img src="gelatina 10.jpg" alt="Imagen 5">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('gelatina 11.jpg')">
+                        <img src="gelatina 11.jpg" alt="Imagen 5">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('gelatinitas.jpg')">
+                        <img src="gelatinitas.jpg" alt="Imagen 5">
+                    </div>
+              </marquee>
+            
+            <!-- Script para abrir imágenes en tamaño completo -->
+            <script>
+                function abrirImagen(rutaImagen) {
+                    window.open(rutaImagen, '_blank');
+                }
+            </script>
+        </section>
+    </table>
+    </section>
+    <section id="tartas">
+    <table>
+        <h1>Tartas</h1>
+        <p class="trebuchet-ms">Podemos realizar de diferentes sabores las tartas son una de nuestras especialidades al igual que el flan napolitano</p>
+        <!-- Aquí irían las recetas de tartas -->
+        <section class="gallery">
+            <marquee behavior="scroll" direction="left">
+                <div class="galeria">
+                    <div class="imagen" onclick="abrirImagen('tarta 1.jpg')">
+                        <img src="tarta 1.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('tarta flan.jpg')">
+                        <img src="tarta flan.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="imagen" onclick="abrirImagen('tarta 3.jpg')">
+                        <img src="tarta 3.jpg" alt="Imagen 3">
+                    </div>
+              </marquee>
+            
+            <!-- Script para abrir imágenes en tamaño completo -->
+            <script>
+                function abrirImagen(rutaImagen) {
+                    window.open(rutaImagen, '_blank');
+                }
+            </script>
+        </section>
+    </table>
+    </section>
+    <section id="Paletas de hielo">
+        <table>
+            <h1>Paletas de hielo</h1>
+            <p class="trebuchet-ms">Las paletas son la especialidad de la casa ya que tenemos de muchos sabores y colores.</p>
+            <!-- Aquí irían las recetas de tartas -->
+            <section class="gallery">
+                <marquee behavior="scroll" direction="left">
+                    <div class="galeria">
+                        <div class="imagen" onclick="abrirImagen('paletas de hielo 1.jpg')">
+                            <img src="paletas de hielo 1.jpg" alt="Imagen 1">
+                        </div>
+                        <div class="imagen" onclick="abrirImagen('paletas de hielo 2.jpg')">
+                            <img src="paletas de hielo 2.jpg" alt="Imagen 2">
+                        </div>
+                       
+                  </marquee>
+                
+                <!-- Script para abrir imágenes en tamaño completo -->
+                <script>
+                    function abrirImagen(rutaImagen) {
+                        window.open(rutaImagen, '_blank');
+                    }
+                </script>
+            </section>
+        </table>
+        </section>
+    <section id="contactanos">
+    <table>
+        <h1>contactanos</h1>
+        <p class="trebuchet-ms">Disfruta de nuestras exquisitas recetas de tartas.
+            <br />Puedes contactarnos a los siguientes numeros</U>
+            <br /><li><a href="tel:+527731836341">Llámanos:773 183 63 41</a></li>
+            <br /><li><a href="tel:+527731560633">Llámanos:773156 06 33</a></li>
+        </p>
+        <a href="https://www.facebook.com/profile.php?id=100039896267027&mibextid=ZbWKwL">
+            <img width="200" height="200" src="banner publicitario.jpg" 
+            alt="Enlace a nuestra pagina de facebook">
+        </a>
+    </table>
+    </section>
+    <div id="comentarios">
+    <table>
+        <h2>Deja tu comentario</h2>
+        <form id="commentForm" onsubmit="return addComment()">
+            <textarea id="commentText" placeholder="Escribe tu comentario aquí..." required>
+            </textarea><br>
+            <input type="submit" value="Enviar comentario">
+        </form>
+        <div id="commentSection">
+            <!-- Aquí se mostrarán los comentarios -->
+        </div>
+    </div>
+    
+    <script>
+        function addComment() {
+            var commentText = document.getElementById("commentText").value;
+            if (commentText.trim() === "") {
+                alert("Por favor, escribe un comentario antes de enviar.");
+                return false;
+            }
+            var commentDiv = document.createElement("div");
+            commentDiv.className = "comment";
+            commentDiv.innerHTML = "<p>" + commentText + "</p>";
+            document.getElementById("commentSection").appendChild(commentDiv);
+            document.getElementById("commentText").value = "";
+            return false; 
+            // Evita que el formulario se envíe y la página se recargue
+        }
+    </script>
+    </table>
+    </section>
+
+</body>
+</html>
